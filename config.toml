@@ -22,7 +22,8 @@ highlight_code = true
 footer_links = [
     {url = "$BASE_URL/about", name = "About"},
     {url = "$BASE_URL/atom.xml", name = "RSS"},
-    {url = "https://google.com", name = "Google"},
+    {url = "https://www.morethanmachines.com", name = "More Than Machines"},
+    {url = "https://www.caniturniton.com", name = "Can I turn it on?"},
 ]
 
 zola = true
