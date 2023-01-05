@@ -18,4 +18,4 @@ Finally I need to also do all of this for my consulting business. More than Mach
 
 The next challenge is going to be coming up with the interesting content. Watch this space…
 
-[^1] : It’s also where people refer to their neighbours as scum, kids as grubs and persecute the elderly and those with mental illness)
+[^1]: It’s also where people refer to their neighbours as scum, kids as grubs and persecute the elderly and those with mental illness)
