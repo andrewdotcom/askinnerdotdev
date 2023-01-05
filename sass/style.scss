@@ -43,6 +43,13 @@ img {
 	justify-content: space-between;
 	margin-bottom: 10px;
 }
+
+.footnote-definition{
+	display:inline;
+	float:left;
+	margin-right:10px;
+}
+
 @media (max-width: 38rem) {
 	.homepage-list li a {
 		width: 100%;
