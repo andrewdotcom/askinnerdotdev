@@ -19,6 +19,11 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+menu = [
+    { name = "About", url = "/about", weight = 1 },
+    { name = "Uses", url = "/uses", weight = 2 },
+]
+
 footer_links = [
     {url = "$BASE_URL/about", name = "About"},
     {url = "$BASE_URL/atom.xml", name = "RSS"},
