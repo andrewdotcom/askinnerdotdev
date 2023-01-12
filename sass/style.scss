@@ -50,6 +50,29 @@ img {
 	margin-right:10px;
 }
 
+header {
+	display:flex;
+	align-items: flex-start;
+}
+
+header div.logo {
+	flex-grow: 1;
+}
+
+header div.navigation {
+	display:flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	flex-grow: 2;
+	gap: 10px;
+}
+
+header div.navigation a {
+
+}
+
+
+
 @media (max-width: 38rem) {
 	.homepage-list li a {
 		width: 100%;

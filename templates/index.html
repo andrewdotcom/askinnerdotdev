@@ -49,15 +49,17 @@
 
       {% block header %}
       <header role="banner">
-        <h3 style="margin-top:0;">
-          <a href="{{ config.base_url | safe }}" title="Home">{{ config.title }}</a>
-          <br /><small>{{ config.description }}</small>
-        </h3>
-        <nav>
+        <div class="title">
+          <h3 style="margin-top:0;">
+            <a href="{{ config.base_url | safe }}" title="Home">{{ config.title }}</a>
+            <br /><small>{{ config.description }}</small>
+          </h3>
+        </div>
+        <div class="navigation">
           {% for menu in config.extra.menu %}
               <a href={{ menu.url }} style="margin-left: 0.7em">{{ menu.name }}</a>
           {% endfor %}
-        </nav>
+        </div>
       </header>
       <hr />
       {% endblock header %}
