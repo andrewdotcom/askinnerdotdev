@@ -1,6 +1,6 @@
 +++
 title = "Programming Languages, Frameworks and Software I am learning in 2023"
-description = "This is the first post on the blog"
+description = "The software, programming langauges and frameworks that I want to try and focus on in 2023."
 +++
 
 My last post was about the changes I plan to make to the way I live and work this year. This one is to keep me honest about the software and programming languages that I want to crack in 2023. 
