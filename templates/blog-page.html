@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="post">
+    <hr />
+    <h2>{{ page.title }}</h2>
+    <p class="post_meta"><date>{{ page.date }}</date> - {{ page.reading_time }} minute read</p>
+    {{ page.content | safe }}
+</div>
+{% endblock content %}

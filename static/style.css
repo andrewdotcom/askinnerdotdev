@@ -1,0 +1,133 @@
+html {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #fefefe;
+    font-size:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    color:rgb(255, 80, 80);
+}
+
+sup.footnote-reference a {
+    font-size:75%;
+}
+
+div.footnote-definition {
+    font-size:75%;
+}
+
+div.footnote-definition p {
+    display:inline-block;
+}
+
+
+sup {
+    display: inline-block;
+}
+
+#container {
+    width:66vw;
+    margin: 0 auto;
+}
+
+section#header {
+
+}
+
+section#header h1 {
+    font-size:2.3em;
+}
+
+section#header h1 span {
+    display:block;
+    font-size:50%;
+    color:rgb(151, 149, 149)
+}
+
+section#header ul {
+    padding:0;
+    margin:0 0 50px 0;
+    list-style: none;
+}
+
+section#header ul::before {
+    content:"Menu: "
+}
+
+section#header ul li {
+    display: inline-block;
+    margin-right:5px;
+}
+
+section#content {
+
+}
+
+div.post, div.page {
+    margin-bottom:50px;
+}
+
+div.post date::before {
+    content: "Published ";
+}
+
+div.post h2, div.archive h2, div.page h2 {
+    margin:0 0 0 0;
+    padding:0;
+    max-width: 75%;
+    font-size:1.6em;
+}
+
+div.page h2 {
+    margin:0 0 10px 0;
+}
+
+div.archive h3 {
+    margin:0;
+    padding:0;
+    max-width: 75%;
+    font-size:1.3em;
+}
+
+div.archive h4 {
+    margin:0;
+    padding:0;
+    max-width: 75%;
+    font-size:1.6em;
+}
+
+div.post p.post_meta, div.archive p.post_meta  {
+    color: #515151;
+    margin:0;
+    padding:0;
+}
+
+div.archive p.post_meta  {
+    margin-bottom:20px;
+    font-size:50%;
+}
+
+div.post hr, div.archive hr, div.page hr {
+    border:2px solid #000;
+    width: 25px;
+    text-align: left;
+    display:inline-block;
+}
+
+div.post p, div.page p {
+    line-height:1.3em;
+}
+
+div.page_controls {
+
+}
+
+section#footer {
+    margin-top:50px;
+    font-size:75%;
+}

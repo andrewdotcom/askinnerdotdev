@@ -1,16 +1,11 @@
 # The URL the site will be built for
-base_url = "https://www.askinner.dev"
+base_url = "https://askinner.dev"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+compile_sass = false
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
-
-sort_by = "date"
-
-title = "Andrew Skinner"
-description = "A weblog of sorts."
 
 [markdown]
 # Whether to do syntax highlighting
@@ -19,18 +14,3 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
-menu = [
-    { name = "About", url = "/about", weight = 1 },
-    { name = "Uses", url = "/uses", weight = 2 },
-]
-
-footer_links = [
-    {url = "$BASE_URL/about", name = "About"},
-    {url = "$BASE_URL/atom.xml", name = "RSS"},
-    {url = "https://www.morethanmachines.com", name = "More Than Machines"},
-]
-
-zola = true
-netlify = true
-maintained_with_love = true
-footer_tagline = "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."

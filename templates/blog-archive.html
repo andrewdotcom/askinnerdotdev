@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="archive">
+    <h2>Archive</h2>
+    <h3>2023</h3>
+    {% for page in paginator.pages %}
+    <hr />
+    <h4><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h4>
+    <p class="post_meta"><date>{{ page.date }}</date> - {{ page.reading_time }} minute read</p>
+    {% endfor %}
+</div>
+<div class="page_controls">
+    {% if paginator.previous %}
+        <a class="previous" href="{{ paginator.previous }}">&laquo; Previous</a>
+    {% endif %}
+    {% if paginator.next %}
+        <a class="next" href="{{ paginator.next }}">Next &raquo;<</a>
+    {% endif %}
+</div>
+{% endblock content %}
