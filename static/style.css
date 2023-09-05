@@ -97,6 +97,10 @@ div.post h2, div.archive h2, div.page h2 {
     font-weight:normal;
 }
 
+div.post ul li {
+    line-height:1.5em;
+}
+
 div.page h2 {
     margin:0 0 10px 0;
     font-weight: normal;
