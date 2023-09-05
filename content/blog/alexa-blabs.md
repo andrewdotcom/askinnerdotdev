@@ -1,6 +1,6 @@
 +++
 title = "Alexa blabs"
-date = 2023-08-03
+date = 2023-09-03
 +++
 
 Alexa let me down big time this week. A couple of weeks ago during the Amazon Prime sale I bought my wife a birthday present. It was delievered and I put it away for her birthday which isn't for a while. All good, a nice present at a good price and she was going to get a lovely surprise.
