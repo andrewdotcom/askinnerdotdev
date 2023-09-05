@@ -1,6 +1,6 @@
 +++
 title = "Kicking the tires of Llama2 with Ollama."
-date = 2023-08-05
+date = 2023-09-05
 +++
 
 I've been spending a tiny bit of time over the last couple of weeks experimenting with the Meta open source Llama models on my Macbook Pro using [Ollama](https://github.com/jmorganca/ollama). The best way to describe Ollama is that it is like a package manager for large language models and it makes it super simple to get many of the available open source models up and running quickly and easily. This is pretty neat as getting a lot of these models to run on consumer hardware is in many cases non trivial.
