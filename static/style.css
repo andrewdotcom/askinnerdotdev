@@ -118,6 +118,7 @@ div.archive h4 {
     padding:0;
     max-width: 75%;
     font-size:1.6em;
+    font-weight:normal;
 }
 
 div.post p.post_meta, div.archive p.post_meta  {
