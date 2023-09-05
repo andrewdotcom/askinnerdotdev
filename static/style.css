@@ -6,11 +6,18 @@ html {
 body {
     background-color: #fefefe;
     font-size:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Tahoma, sans-serif;
 }
 
 a {
-    color:rgb(255, 80, 80);
+    color:#026873;
+}
+
+pre {
+    font-size:15px;
+    padding:15px 10px;
+    border-radius:5px;
+    background-color:#01415B !important;
 }
 
 sup.footnote-reference a {
@@ -41,12 +48,14 @@ section#header {
 
 section#header h1 {
     font-size:2.3em;
+    color:#024059;
 }
 
 section#header h1 span {
     display:block;
     font-size:50%;
-    color:rgb(151, 149, 149)
+    color:rgb(151, 149, 149);
+    font-weight: normal;
 }
 
 section#header ul {
@@ -72,6 +81,10 @@ div.post, div.page {
     margin-bottom:50px;
 }
 
+div.post date {
+    font-size:15px;
+}
+
 div.post date::before {
     content: "Published ";
 }
@@ -81,10 +94,12 @@ div.post h2, div.archive h2, div.page h2 {
     padding:0;
     max-width: 75%;
     font-size:1.6em;
+    font-weight:normal;
 }
 
 div.page h2 {
     margin:0 0 10px 0;
+    font-weight: normal;
 }
 
 div.archive h3 {
@@ -105,11 +120,12 @@ div.post p.post_meta, div.archive p.post_meta  {
     color: #515151;
     margin:0;
     padding:0;
+    font-size:15px;
 }
 
 div.archive p.post_meta  {
     margin-bottom:20px;
-    font-size:50%;
+    font-size:15px;
 }
 
 div.post hr, div.archive hr, div.page hr {
@@ -120,7 +136,7 @@ div.post hr, div.archive hr, div.page hr {
 }
 
 div.post p, div.page p {
-    line-height:1.3em;
+    line-height:1.5em;
 }
 
 div.page_controls {
