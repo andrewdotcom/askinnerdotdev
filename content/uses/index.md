@@ -27,7 +27,7 @@ template = "page.html"
  * I use Time Machine to keep a local hot back up of my files that I export to a portable Lacie USB drive.
  * I back up everything to the cloud - nothing fancy, I am a fairly heavy user of iCloud.
 
-# Desk Setup
+## Desk Setup
 
 * My Desk is an old door atop of some early 19th centuray ministery drawers. The drawers are pretty neat and have some cool features that Preists used for writing their ministeries. Lots of pull out flaps and stuff too. I really need to upgrade my desk setup at some point.
 * My chain is a wooden/metal thing that i found in the hard waste on the side of the road. I sanded it down and tidied it up and it's now quite a nice piece. I have no idea what style it is or who made it but I love it. I sit on two old cushions I stole from the kids playroom.
