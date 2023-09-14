@@ -6,11 +6,16 @@ html {
 body {
     background-color: #fefefe;
     font-size:20px;
-    font-family: Tahoma, sans-serif;
+    font-family: "Fira Sans","Helvetica Neue",Helvetica,Calibri,Verdana,sans-serif;
 }
 
 a {
-    color:#026873;
+    color:#F29F05;
+    text-decoration-style: wavy;
+}
+
+h2 a {
+    text-decoration: none;
 }
 
 pre {
@@ -18,6 +23,11 @@ pre {
     padding:15px 10px;
     border-radius:5px;
     background-color:#01415B !important;
+    white-space: pre-wrap;
+}
+
+pre::before {
+    content: "$ "
 }
 
 h3 {
@@ -98,7 +108,7 @@ div.post h2, div.archive h2, div.page h2 {
     padding:0;
     max-width: 75%;
     font-size:1.6em;
-    font-weight:normal;
+    font-weight:600;
 }
 
 div.post ul li {
