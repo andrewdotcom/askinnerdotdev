@@ -2,7 +2,7 @@
 base_url = "https://askinner.dev"
 
 title = "askinner.dev - Andrew Skinner, a blog of sorts."
-
+description = "This is the blog of Andrew Skinner. Come and have a read."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false

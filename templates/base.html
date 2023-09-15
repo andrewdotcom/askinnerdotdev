@@ -10,8 +10,7 @@
     {% if page.extra.author %}
     <meta name="author" content="{{ page.extra.author | safe }}">{% else %}
     <meta name="author" content="{{ config.extra.author_url }}">{% endif %}
-    {% if page.summary %}
-    <meta name="description" content="{{ page.summary | safe }}">{% endif %}
+    {% if page.summary %}<meta name="description" content="{{ page.summary | safe }}">{% else %}<meta name="description" content="{{ config.description | safe }}">{% endif %}
 
     <!-- Open Graph Tags -->
     <meta property="og:site_name" content="{{ config.title | safe }}">
