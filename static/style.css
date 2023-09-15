@@ -31,7 +31,6 @@ pre::before {
 }
 
 div.post img, div.page img {
-    max-width: 97%;
     border: 1px solid #ccc;
     padding:10px;
 }
