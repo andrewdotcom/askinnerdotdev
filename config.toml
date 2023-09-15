@@ -19,4 +19,4 @@ highlight_code = true
 # Put all your custom variables here
 twitter = "@andrewdotcom"
 author_url = "Andrew Skinner"
-standard_social_image = "/static/images/standard_social.png"
+standard_social_image = "/images/standard_social.png"
