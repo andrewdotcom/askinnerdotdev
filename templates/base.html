@@ -25,7 +25,7 @@
     <meta property='og:image' content="{{ get_url(path="", trailing_slash=false) }}{{ resize_image(path=page.extra.banner_path, width=1200, height=627, op="fill", format="auto" , quality=75) }}" />
     <meta property='og:image:width' content="1200" />
     <meta property='og:image:height' content="627" />{% else %}
-    <meta property='og:image' content="{{ get_url(path="", trailing_slash=false) }}{{ config.extra.standard_social_image | safe }}" />
+    <meta property='og:image' content="{{ get_url(path="", trailing_slash=false) }}{{ resize_image(path=config.extra.standard_social_image, width=1200, height=630, op=" fill", format="auto" , quality=75) }}" />
     <meta property='og:image:width' content="1200" />
     <meta property='og:image:height' content="627" />{% endif %}
     <meta property="og:type" content="article">
@@ -41,7 +41,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page.title }}">{% if page.extra.banner_path %}
     <meta name="twitter:image" content="{{ resize_image(path=page.extra.banner_path, width=876, height=438, op=" fill", format="auto" , quality=75) }}">{% else %}
-    <meta name="twitter:image" content="{{ get_url(path="", trailing_slash=false) }}{{ config.extra.standard_social_image | safe }}">{% endif %}
+    <meta name="twitter:image" content="{{ get_url(path="", trailing_slash=false) }}{{ resize_image(path=config.extra.standard_social_image_twitter, width=1200, height=630, op=" fill", format="auto" , quality=75) }}">{% endif %}
     <meta name="twitter:description" content="{{ page.description }}">
 
     <link rel="canonical" href="{{ get_url(path="", trailing_slash=false) }}">{% else %}
