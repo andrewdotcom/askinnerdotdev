@@ -30,6 +30,12 @@ pre::before {
     content: "$ "
 }
 
+div.post img, div.page img {
+    max-width: 97%;
+    border: 1px solid #ccc;
+    padding:10px;
+}
+
 h3 {
     font-weight:normal;
 }

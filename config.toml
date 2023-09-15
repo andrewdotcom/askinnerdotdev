@@ -1,6 +1,9 @@
 # The URL the site will be built for
 base_url = "https://askinner.dev"
 
+title = "askinner.dev - Andrew Skinner, a blog of sorts."
+
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
@@ -14,3 +17,6 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+twitter = "@andrewdotcom"
+author_url = "Andrew Skinner"
+standard_social_image = "/static/images/standard_social.png"

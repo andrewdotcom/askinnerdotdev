@@ -10,5 +10,5 @@ else
     title=$1
     file="$(tr '[:upper:]' '[:lower:]' <<< "$1")"
     description=$2
-    echo $'+++\ntitle = "'${title}$'"\ndescription = "'${description}$'"\ntags = ["'${tags}$'"]\ndraft=true\n+++' > ./content/"${now}-${file// /-}.md"
+    echo $'+++\ntitle = "'${title}$'"\ndate = "'${now}$'"\ndescription = "'${description}$'"\ntags = ["'${tags}$'"]\ndraft=true\n+++' > ./content/blog/"${now}-${file// /-}.md"
 fi
