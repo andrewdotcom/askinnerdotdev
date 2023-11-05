@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>askinner.dev</title>
+    <title>{% if page.title %}{{ page.title | safe }}{% else %}{{ config.title | safe }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Standard meta tags -->
+    {% if page.extra.author %}
+    <meta name="author" content="{{ page.extra.author | safe }}">{% else %}
+    <meta name="author" content="{{ config.extra.author_url }}">{% endif %}
+    {% if page.summary %}<meta name="description" content="{{ page.summary | safe }}">{% else %}<meta name="description" content="{{ config.description | safe }}">{% endif %}
+
+    <!-- Open Graph Tags -->
+    <meta property="og:site_name" content="{{ config.title | safe }}">
+    {% if page %}
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:url" content="{{ get_url(path=page.path, trailing_slash=false) }}">
+    <meta property="og:description" content="{{ page.summary | safe }}">{% if page.extra.banner_path %}
+    <meta property='og:image' content="{% set img = resize_image(path=page.extra.banner_path, width=1200, height=630, op="fill", format="auto" , quality=75) %}{{img.url | safe}}" />
+    <meta property='og:image:width' content="1200" />
+    <meta property='og:image:height' content="627" />{% else %}
+    <meta property='og:image' content="{% set img = resize_image(path=config.extra.standard_social_image, width=1200, height=630, op="fill", format="auto" , quality=75) %}{{img.url | safe}}" />
+    <meta property='og:image:width' content="1200" />
+    <meta property='og:image:height' content="627" />{% endif %}
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="{{ page.date | date(format=" %Y-%m-%d") }}">
+    {% if page.updated %}
+    <meta property="article:modified_time" content="{{ page.updated | date(format=" %Y-%m-%d") }}">{% endif %}{% if page.extra.author_url %}
+    <meta property="article:author" content="{{ page.extra.author_url }}">{% else %}
+    <meta property="article:author" content="{{ config.extra.author_url }}">{% endif %}
+    {% if page.taxonomies.tags %}{% for tag in page.taxonomies.tags %}
+    <meta property="article:tags" content="{{ tag }}">{% endfor %}{% endif %}{% if config.extra.twitter %}
+    <meta name="twitter:site" content="{{ config.extra.twitter }}">
+    <meta name="twitter:creator" content="{{ config.extra.twitter }}">{% endif %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }}">{% if page.extra.banner_path %}
+    <meta name="twitter:image" content="{% set img = resize_image(path=page.extra.banner_path, width=1200, height=630, op="fill", format="auto" , quality=75) %}{{img.url | safe}}">{% else %}
+    <meta name="twitter:image" content="{% set img = resize_image(path=config.extra.standard_social_image_twitter, width=1200, height=630, op="fill", format="auto" , quality=75) %}{{img.url | safe}}">{% endif %}
+    <meta name="twitter:description" content="{{ page.description }}">
+
+    <link rel="canonical" href="{{ get_url(path="", trailing_slash=false) }}">{% else %}
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ get_url(path="", trailing_slash=false) }}">{% endif %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/style.css" />
     {% block rss %}
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path=" rss.xml", trailing_slash=false)
+        }}">
     {% endblock %}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRVKESBHJZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WRVKESBHJZ');
+    </script>
 </head>
+
 <body>
     <div id="container">
         <section id="header">
@@ -24,8 +81,10 @@
             {% block content %} {% endblock %}
         </section>
         <section id="footer">
-            &copy;<script>document.write(new Date().getFullYear())</script> Andrew Skinner
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> Andrew Skinner
         </section>
     </div>
 </body>
+
 </html>
