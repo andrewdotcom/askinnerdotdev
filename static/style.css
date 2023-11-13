@@ -1,16 +1,17 @@
 html {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #fefefe;
-    font-size:20px;
-    font-family: "Fira Sans","Helvetica Neue",Helvetica,Calibri,Verdana,sans-serif;
+    font-size: 20px;
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Calibri, Verdana,
+        sans-serif;
 }
 
 a {
-    color:#023e8a;
+    color: #107896;
     text-decoration: none;
 }
 
@@ -19,156 +20,165 @@ h2 a {
 }
 
 pre {
-    font-size:15px;
-    padding:15px 10px;
-    border-radius:5px;
-    background-color:#01415B !important;
+    font-size: 15px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    background-color: #01415b !important;
     white-space: pre-wrap;
 }
 
 pre::before {
-    content: "$ "
+    content: "$ ";
 }
 
-div.post img, div.page img {
+div.post img,
+div.page img {
     border: 1px solid #ccc;
-    padding:10px;
+    padding: 10px;
 }
 
 h3 {
-    font-weight:normal;
+    font-weight: normal;
+}
+
+blockquote {
+    border-left: 4px solid #107896;
+    padding-left: 15px;
 }
 
 sup.footnote-reference a {
-    font-size:75%;
+    font-size: 75%;
 }
 
 div.footnote-definition {
-    font-size:75%;
+    font-size: 75%;
 }
 
 div.footnote-definition p {
-    display:inline-block;
+    display: inline-block;
 }
-
 
 sup {
     display: inline-block;
 }
 
 #container {
-    width:66vw;
+    width: 66vw;
     margin: 0 auto;
 }
 
 section#header {
-
 }
 
 section#header h1 {
-    font-size:2.3em;
-    color:#024059;
+    font-size: 2.3em;
+    color: #3c6478;
 }
 
 section#header h1 span {
-    display:block;
-    font-size:50%;
-    color:rgb(151, 149, 149);
+    display: block;
+    font-size: 50%;
+    color: rgb(151, 149, 149);
     font-weight: normal;
 }
 
 section#header ul {
-    padding:0;
-    margin:0 0 50px 0;
+    padding: 0;
+    margin: 0 0 50px 0;
     list-style: none;
 }
 
 section#header ul::before {
-    content:"Menu: "
+    content: "Menu: ";
 }
 
 section#header ul li {
     display: inline-block;
-    margin-right:5px;
+    margin-right: 5px;
 }
 
 section#content {
-
 }
 
-div.post, div.page {
-    margin-bottom:50px;
+div.post,
+div.page {
+    margin-bottom: 50px;
 }
 
 div.post date {
-    font-size:15px;
+    font-size: 15px;
 }
 
 div.post date::before {
     content: "Published ";
 }
 
-div.post h2, div.archive h2, div.page h2 {
-    margin:0 0 0 0;
-    padding:0;
+div.post h2,
+div.archive h2,
+div.page h2 {
+    margin: 0 0 0 0;
+    padding: 0;
     max-width: 75%;
-    font-size:1.6em;
-    font-weight:600;
+    font-size: 1.6em;
+    font-weight: 600;
 }
 
 div.post ul li {
-    line-height:1.5em;
+    line-height: 1.5em;
 }
 
 div.page h2 {
-    margin:0 0 10px 0;
+    margin: 0 0 10px 0;
     font-weight: normal;
 }
 
 div.archive h3 {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     max-width: 75%;
-    font-size:1.3em;
-    font-weight:normal;
+    font-size: 1.3em;
+    font-weight: normal;
 }
 
 div.archive h4 {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     max-width: 75%;
-    font-size:1.6em;
-    font-weight:normal;
+    font-size: 1.6em;
+    font-weight: normal;
 }
 
-div.post p.post_meta, div.archive p.post_meta  {
+div.post p.post_meta,
+div.archive p.post_meta {
     color: #515151;
-    margin:0;
-    padding:0;
-    font-size:15px;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
 }
 
-div.archive p.post_meta  {
-    margin-bottom:20px;
-    font-size:15px;
+div.archive p.post_meta {
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 
-div.post hr, div.archive hr, div.page hr {
-    border:2px solid #000;
+div.post hr,
+div.archive hr,
+div.page hr {
+    border: 2px solid #000;
     width: 25px;
     text-align: left;
-    display:inline-block;
+    display: inline-block;
 }
 
-div.post p, div.page p {
-    line-height:1.5em;
+div.post p,
+div.page p {
+    line-height: 1.5em;
 }
 
 div.page_controls {
-
 }
 
 section#footer {
-    margin-top:50px;
-    font-size:75%;
+    margin-top: 50px;
+    font-size: 75%;
 }
