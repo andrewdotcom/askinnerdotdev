@@ -57,7 +57,7 @@ wget https://data.gov.au/data/dataset/0de37904-43e0-4814-b21b-5b64fafefe6f/resou
 
 > If grep finds more than 10 lines that say "hello world" then head will have all 10 lines it wants, and close the pipe. This will cause grep to be killed with a SIGPIPE, so it does not need to continue scanning a very large file.
 
-This means that in our case, wget will be terminated after retrieving the required number of lines and will stop downloading the file. This doesn’t provide the same flexibility as a range request (as it only returns the head of the file) but it does enable the download of a sample of the linked dataset without having to download the full dataset. This can then be piped again into the tool of your choice or example below we pip the file head into duckdb.
+This means that in our case, wget will be terminated after retrieving the required number of lines and will stop downloading the file. This doesn’t provide the same flexibility as a range request (as it only returns the head of the file) but it does enable the download of a sample of the linked dataset without having to download the full dataset. This can then be piped again into the tool of your choice or example below we pipe the file head into duckdb.
 
 ```
 wget https://data.gov.au/data/dataset/0de37904-43e0-4814-b21b-5b64fafefe6f/resource/a83d500d-b47a-4f03-9d77-4c0524217855/download/labelreg.csv -qO - | head -10  | duckdb :memory: "SELECT * FROM read_csv_auto('/dev/stdin')"
