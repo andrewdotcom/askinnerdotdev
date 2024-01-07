@@ -7,7 +7,7 @@ I didn’t do too well with my resolutions last year, don’t get me wrong I did
 
 *50% less.*
 * Working at home on my own (**D-** I hardly went anywhere)
-* Buying coffee (** D-** I think my coffee intake increased if anything)
+* Buying coffee (**D-** I think my coffee intake increased if anything)
 * Wishing I had something I haven’t (**B** I’m pretty happy with my lot)
 * Worrying about money (**C** I am a small business owner after all)
 * Putting off tasks until the very last minute (**D-** still working on this)
