@@ -1,6 +1,6 @@
 +++
 title = "This is a test post"
-date = 07-03-2024
+date = 2024-03-07
 +++
 
-To my blog
+for the blog
