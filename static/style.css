@@ -118,8 +118,8 @@ div.archive h2,
 div.page h2 {
     margin: 0 0 0 0;
     padding: 0;
-    max-width: 75%;
-    font-size: 1.6em;
+    max-width: 100%;
+    font-size: 2em;
     font-weight: 600;
 }
 
