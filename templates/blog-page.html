@@ -1,10 +1,10 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div class="post">
     <hr />
-    <h2>{{ page.title }}</h2>
-    <p class="post_meta"><date>{{ page.date }}</date> - {{ page.reading_time }} minute read</p>
+    <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+    <p class="post_meta">
+        <date>{{ page.date }}</date> - {{ page.reading_time }} minute read
+    </p>
     {{ page.content | safe }}
 </div>
 {% endblock content %}
